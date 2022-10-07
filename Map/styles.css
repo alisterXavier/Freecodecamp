@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+svg:not(#legend){
+    background-color: antiquewhite;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+svg path:hover{
+    fill: aqua;
+}
+#legend{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background-color: black;
+    box-shadow: 1px 1px 1px 10px black;
+    border-radius: 10px;
+}
+#tooltip{
+    position: absolute;
+    visibility: hidden;
+    border-radius: 10px;
+    z-index: 99;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 0.6;
+    border: 2px solid aqua;
+}

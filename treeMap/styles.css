@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    background-color: black;
+}
+
+rect{
+    border: 1px solid black;
+}
+rect:hover:not(#legend rect){
+    background-color: black;
+    opacity: 0.4;
+}
+#legend{
+    position: absolute;
+    top: 300;
+    right: 0;
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    transition: width 550ms, height 550ms, transform 2s ease;
+}
+#legend * {
+    display: none;
+}
+#legend:hover{
+    background-color: black;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200;
+    height: 200;
+    transition: width 550ms, height 550ms, transform 2s ease;
+}
+#legend:hover *{
+    width: 200;
+    margin: 20px;
+    display: block;
+}
+#tooltip{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    color: white;
+}

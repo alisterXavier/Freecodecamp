@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#title{
+    color:white;
+}
+rect{
+    fill: aqua;
+}
+svg{
+    border: 3px solid aqua;
+    box-shadow: 1px 3px 6px 3px aqua;
+}
+.bar:hover{
+    fill: black;
+}
+#tooltip{
+    margin: 20px 500px;
+}

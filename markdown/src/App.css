@@ -1,0 +1,31 @@
+body{
+  background-color: gray;
+  /* color: white; */
+}
+.container{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.scroll{
+  height: 500px;
+  min-width: 500px;
+}
+.scroll, #editor{
+  padding: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#editor{
+  min-height: 500px;
+  min-width: 500px;
+  background-color: black;
+  color: white;
+}
+#preview{
+  color: white;
+  background-color: black;
+  border: 1px solid   black;
+  text-align: start;
+  border: 1px solid white;
+}
